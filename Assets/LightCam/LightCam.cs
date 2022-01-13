@@ -16,7 +16,7 @@ public class LightCam : MonoBehaviour
     private void Awake()
     {
         mCamera = this.GetComponent<Camera>();
-        mCamera.SetReplacementShader(shader, "");
+        mCamera.SetReplacementShader(shader, "");//使用shader进行渲染
         Shader.SetGlobalTexture("_ShadowMap", mCamera.targetTexture);//拿到shadowMap, 设置为全局供shader使用
    
         
@@ -26,6 +26,6 @@ public class LightCam : MonoBehaviour
     void Update()
     {
         Shader.SetGlobalMatrix("_ShadowLauncherMatrix", transform.worldToLocalMatrix);//保存将世界坐标转换到光源坐标的矩阵
-        Shader.SetGlobalVector("_ShadowLauncherParam", new Vector4(mCamera.orthographicSize, mCamera.nearClipPlane, mCamera.farClipPlane));
+        Shader.SetGlobalVector("_ShadowLauncherParam", new Vector4(mCamera.orthographicSize, mCamera.nearClipPlane, mCamera.farClipPlane));//存储相机内参
     }
 }

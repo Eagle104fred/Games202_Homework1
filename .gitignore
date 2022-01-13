@@ -14,10 +14,12 @@
 *.userprefs
 
 # Build results
+*.json
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+Temp/
 x64/
 x86/
 bld/
@@ -58,6 +60,7 @@ artifacts/
 StyleCopReport.xml
 
 # Files built by Visual Studio
+*_.csproj
 *_i.c
 *_p.c
 *_h.h

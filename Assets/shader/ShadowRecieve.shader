@@ -119,7 +119,7 @@ Shader "Custom/ShadowRecieve"
 
             // STEP 3: PCF
             float textureSize = 1024.0;
-            float filterStride = 15.0;
+            float filterStride = 10.0;
             float filterRange = filterStride/textureSize*wPenumbra;//
             int unBlockCount = 0;
             float shadowAlpha=0.0;
@@ -202,7 +202,11 @@ Shader "Custom/ShadowRecieve"
         float4 frag(v2f i):SV_Target
         {
             float4 color = tex2D(_MainTex,i.uv);//拿到主颜色
-            float shadowAlpha = PCSS(i);   
+
+            float shadowAlpha=0.0;
+            //shadowAlpha = HardShadow(i);  
+            //shadowAlpha = PCF(i);  
+            shadowAlpha = PCSS(i);   
 
 
             color.rgb *=(1-shadowAlpha)*_BaseColor.rgb;//阴影能见度加上材质本身的颜色
