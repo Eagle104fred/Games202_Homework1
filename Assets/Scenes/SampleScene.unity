@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45143104, g: 0.50076026, b: 0.5714334, a: 1}
+  m_IndirectSpecularColor: {r: 0.44913733, g: 0.49583668, b: 0.5576141, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -305,14 +305,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413232616}
-  m_LocalRotation: {x: 0.24002838, y: -0.25070062, z: 0.06431538, w: 0.9356277}
+  m_LocalRotation: {x: 0.16066119, y: -0.26184452, z: 0.049559355, w: 0.9503522}
   m_LocalPosition: {x: 7.64, y: 19.55, z: -13.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2051025671}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 28.777, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.349, y: -30.704, z: 0.611}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,13 +389,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.00020327093, y: -0.11921989, z: -0.012903335, w: 0.99278396}
-  m_LocalPosition: {x: 1.1, y: 11.06, z: -7.66}
+  m_LocalRotation: {x: 0.007095821, y: 0.4603445, z: -0.010778994, w: 0.8876465}
+  m_LocalPosition: {x: -12.58, y: 12.87, z: -5.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.199, y: -13.693, z: -1.465}
+  m_LocalEulerAnglesHint: {x: 1.29, y: 54.815, z: -0.722}
 --- !u!1001 &1116456701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -684,13 +684,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051025670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.06537158, y: 0.15149064, z: -0.09272077, w: 0.98192674}
   m_LocalPosition: {x: -0, y: 0, z: 3.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 413232618}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 9.002, y: 16.795, z: -9.457}
 --- !u!114 &2051025672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 30
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

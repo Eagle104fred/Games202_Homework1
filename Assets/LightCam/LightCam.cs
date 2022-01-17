@@ -25,7 +25,9 @@ public class LightCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Shader.SetGlobalMatrix("_ShadowLauncherMatrix", transform.worldToLocalMatrix);//保存将世界坐标转换到光源坐标的矩阵
         Shader.SetGlobalVector("_ShadowLauncherParam", new Vector4(mCamera.orthographicSize, mCamera.nearClipPlane, mCamera.farClipPlane));//存储相机内参
+        Shader.SetGlobalVector("_ShadowLightDirection", mCamera.transform.forward);
     }
 }
