@@ -1,6 +1,6 @@
 
 # 更新列表
-动态bias调整self-shadow
+- 动态bias调整self-shadow
 
 # 介绍
  作业1在Unity上的复现, 实现了基于的硬阴影, PCF, PCSS
