@@ -1,9 +1,9 @@
 
 # 更新列表
-- 动态bias调整self-shadow
-- ToonShader
- - 描边
- - 双影
+### 动态bias调整self-shadow
+### ToonShader
+-  描边
+-  双影
 
 # 介绍
  作业1在Unity上的复现, 实现了基于的硬阴影, PCF, PCSS
